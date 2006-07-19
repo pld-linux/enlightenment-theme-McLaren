@@ -9,7 +9,7 @@ Group:		Themes
 Source0:	http://www.get-e.org/Themes/E17/_files/%{_theme}-%{version}.edj
 # Source0-md5:	debde6b5b20af334daea0dea3a1124c3
 URL:		http://www.get-e.org/Themes/E17/
-Requires:	enlightenmentDR17
+Requires:	enlightenment >= 0.16.999
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -23,13 +23,13 @@ Motyw zorientowany pod k±tem osób lubi±cych ciemne i miêkkie kolory.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_datadir}/enlightenmentDR17/data/themes
+install -d $RPM_BUILD_ROOT%{_datadir}/enlightenment/data/themes
 
-install %{SOURCE0} $RPM_BUILD_ROOT%{_datadir}/enlightenmentDR17/data/themes/%{_theme}.edj
+install %{SOURCE0} $RPM_BUILD_ROOT%{_datadir}/enlightenment/data/themes/%{_theme}.edj
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{_datadir}/enlightenmentDR17/data/themes/%{_theme}.edj
+%{_datadir}/enlightenment/data/themes/%{_theme}.edj
