@@ -1,6 +1,6 @@
 %define	_theme	McLaren
 Summary:	A theme oriented for those who like dark and soft colors
-Summary(pl):	Motyw zorientowany pod k±tem osób lubi±cych ciemne i miêkkie kolory
+Summary(pl.UTF-8):   Motyw zorientowany pod kÄ…tem osÃ³b lubiÄ…cych ciemne i miÄ™kkie kolory
 Name:		enlightenment-theme-%{_theme}
 Version:	0.1.0
 Release:	1
@@ -16,8 +16,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A theme oriented for those who like dark and soft colors.
 
-%description -l pl
-Motyw zorientowany pod k±tem osób lubi±cych ciemne i miêkkie kolory.
+%description -l pl.UTF-8
+Motyw zorientowany pod kÄ…tem osÃ³b lubiÄ…cych ciemne i miÄ™kkie kolory.
 
 %prep
 
